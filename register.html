@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="email">
+          <span
+            ><i class="fa-solid fa-envelope"></i
+            >&nbsp;&nbsp;fitmas@gmail.com</span
+          >
+        </div>
+        <div class="working-hours">
+          <span
+            ><i class="fa-solid fa-clock"></i>&nbsp;&nbsp; Mon - Sun : 8.00 AM -
+            10.00 PM</span
+          >
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Logo" />
+        </div>
+
+        <div class="main-btn-wrapper">
+          <div class="menu-wrapper">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="phone">
+            <span
+              ><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+94 717269006</span
+            >
+          </div>
+          <a href="./login.html" class="btn btn-sign-in">Sign In</a>
+          <a href="./register.html" class="btn btn-sign-up">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+<div class="mobile-nav">
+  <div class="logo">
+    <img src="./img/logo-white.svg" alt="">
+  </div>
+  <div class="nav-btn">
+    <i class="fa-solid fa-bars" id="menu-toggle"></i>
+  </div>
+  <div class="sidebar" id="sidebar">
+<div class="close-btn" id="close-btn">
+&times;
+</div>
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+  <li>Services</li>
+</ul>
+  </div>
+</div>
+
+<section class="register">
+<div class="container">
+<div class="card">
+<h2>  Gym System Register</h2>
+<form id="registerForm" >
+<input type="text" placeholder="Full Name" name="fullName" required>
+<input type="text" placeholder="Phone" name="phone" required>
+    <input type="text" placeholder="User Name" name="userName" required>
+    <input type="text" placeholder="Password" name="password" required>
+    <input type="submit" class="btn">
+</form>
+
+</div>
+</div>
+</section>
+
+
+<style>
+.register{
+        background-image: url(./img/login.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 700px;
+    }
+    .card{
+        text-align: center;
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 100px;
+        max-width: 400px;
+        margin: auto;
+        transform: translateY(10%);
+    }
+    input[type="text"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.card h2{
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+.card h2{
+    font-size: 18px;
+}
+.card{
+    transform: translateY(35%);
+}
+}
+</style>
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function (e)
+{
+   e.preventDefault();
+
+   const formData = new FormData(this);
+
+   fetch("./includes/register-back.php",{
+    method:"POST",
+    body:formData
+   })
+   .then(response=>response.json())
+   .then(data=>{
+    if(data.success){
+        Swal.fire("Success", data.message, "success");
+    }else{
+        Swal.fire("Error", data.message, "error");
+    }
+   })
+   .catch(error=>{
+    Swal.fire("Error", "Something went wrong", "error");
+    console.error("Error", error);
+   });
+});
+</script>
+
+
+<footer>
+  <section class="footer">
+<div class="container">
+  <div class="logo">
+    <img src="./img/logo-white.svg" alt="">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+  </nav>
+  <div class="copyright">
+    <span>Developed by Chethani Pabasara 2025</span>
+  </div>
+</div>
+
+  </section>
+</footer>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 2,
+            nav: true,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

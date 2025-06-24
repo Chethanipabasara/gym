@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+p,body{
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --color_one:rgb(245, 15, 15);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: auto;
+}
+.top-bar{
+    background: #000;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    min-width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    background: var(--color_one);
+    padding: 0 25px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid var(--color_one);
+    color:#000;
+    transition-duration: 0.5s;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    text-transform: uppercase;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.main-btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-sign-up{
+    background: #000;
+}
+
+/*Home page slider section start*/
+.home-page-slider{
+    background-image: url('./img/hero-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    color: #fff;
+    position: relative;
+}
+.home-page-slider .content{
+    transform: translateY(50%);
+    top: 5%;
+    position: absolute;
+}
+.home-page-slider .sub-title {
+    font-weight: 400;
+    font-size: 20px;
+}
+.home-page-slider .main-title{
+font-size: 100px;
+line-height: 1;
+}
+/*About Section*/
+
+.about .row{
+    display: flex;
+    gap: 30px;
+}
+.about .col{
+    width: 33.33%;
+}
+.about .card{
+    padding: 40px;
+    background: #f8f8f8;
+    transition-duration: 0.5s;
+}
+.about .sub-title{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color_one);
+    margin: 20px 0;
+}
+.about p{
+    margin: 20px 0;
+}
+.about{
+    margin-top: 100px;
+}
+.about .card:hover{
+    color:#fff;
+    background: #000;
+    transition-duration: 0.5s;
+}
+/*Count section Start*/
+.count{
+    background-image: url('./img/testimonial.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    margin-top: 100px;
+    position: relative;
+    background-attachment: fixed;
+
+}
+.count::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+z-index: 1;
+}
+.count .container{
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateY(40%);
+}
+.count .row{
+    display: flex;
+    align-items: center;
+}
+.count .col{
+    width: 25%;
+}
+.count small {
+
+font-size: 15px;
+}
+.card-top {
+    display: flex;
+    font-size: 50px;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.count .card{
+    text-align: center;
+}
+/*Team*/
+
+.team {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.team .card{
+    text-align: center;
+    background: #f2f2f2;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.team .row{
+    display: flex;
+    gap: 20px;
+}
+.team .col{
+    width: 33.33%;
+}
+.team h3{
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.team .social-wrapper {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.team i{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.team i:hover{
+    background: var(--color_one);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.team .title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+/*Pricing*/
+.pricing h2{
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+.pricing .sub-title{
+    color: var(--color_one);
+    font-size: 25px;
+}
+.pricing .main-title{
+    font-weight: 400;
+    display: block;
+}
+.pricing .row{
+    display: flex;
+    gap: 50px;
+}
+.pricing .col{
+    width: 33.33%;
+}
+.pricing h3{
+    font-size: 30px;
+}
+.price {
+    font-size: 20px;
+}
+.duration {
+    font-weight: 400;
+    color: var(--color_one);
+}
+.pricing ul {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pricing h4{
+    margin: 20px 0;
+}
+.pricing .card{
+    background: #f2f2f2;
+    padding: 25px;
+    border-radius: 25px;
+}
+.pricing img {
+    padding: 20px;
+    background: var(--color_one);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: -70px;
+}
+/*Latest News*/
+.latest-news{
+    margin:100px 0 ;
+}
+.meta-data {
+    text-align: right;
+    padding-top: 15px;
+}
+.latest-news p{
+    padding:20px 0;
+}
+.latest-news .card-body {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+.latest-news .btn:hover{
+    color: #fff;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: flex !important;
+        font-size: 50px;
+        gap: 50px;
+        justify-content: center;
+}
+/*Footer*/
+.footer{
+    background: #000;
+    color:#fff;
+}
+.footer .logo{
+    text-align: center;
+    padding: 50px 0;
+}
+.footer nav{
+    justify-content: center !important;
+}
+.footer nav a:hover{
+    color: var(--color_one);
+}
+.footer .copyright{
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media only screen and (max-width: 1366px) {
+.logo img {
+    max-width: 150px;
+}
+nav ul {
+    gap: 20px;
+}
+nav{
+    padding: 15px 20px;
+}
+.main-btn-wrapper {
+    gap: 15px;
+}
+.main-btn-wrapper .btn{
+   padding: 15px 0;
+}
+}
+
+@media only screen and (max-width: 1032px) {
+header{
+    display: none;
+}
+.home-page-slider .main-title {
+    font-size: 80px;
+}
+.about {
+    margin-top: 50px;
+}
+.about .main-title {
+    min-height: 80px;
+}
+.count{
+    margin-top: 50px;
+}
+.team {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.latest-news {
+    margin: 50px 0;
+}
+.mobile-nav{
+    display: flex;
+            justify-content: space-between;
+            background-color: #000;
+            padding: 25px 15px;
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            left: 0;
+            right: 0;
+}
+.mobile-nav i{
+    color: #fff;
+    font-size: 25px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    transition: left 0.3 ease;
+}
+.sidebar.active{
+    left: 0;
+}
+.close-btn{
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li{
+    padding-bottom: 20px;
+}
+}
+@media only screen and (max-width: 991px) {
+    .about .row,   .pricing .row,  .team .row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about .col,  .pricing .col ,  .team .col{
+        width: 45%;
+    }
+    .pricing .row .col {
+        padding-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .about .col,  .pricing .col ,  .team .col{
+        width:100%;
+    }
+    .home-page-slider{
+        min-height: 400px;
+        margin-top: 50px;
+    }
+    .home-page-slider .main-title {
+        font-size: 45px;
+    }
+    .count .row{
+        flex-wrap: wrap;
+    }
+    .count .col {
+        width: 100%;
+    }
+    .count .container{
+        transform: translateY(15%);
+    }
+    .count .card{
+        padding-bottom: 20px;
+    }
+    .card-top{
+        font-size: 30px;
+    }
+    .team .title, .pricing h2{
+        font-size: 25px;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1033px) {
+    .mobile-nav{
+display: none;
+    }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="email">
+          <span
+            ><i class="fa-solid fa-envelope"></i
+            >&nbsp;&nbsp;fitmas@gmail.com</span
+          >
+        </div>
+        <div class="working-hours">
+          <span
+            ><i class="fa-solid fa-clock"></i>&nbsp;&nbsp; Mon - Sun : 8.00 AM -
+            10.00 PM</span
+          >
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Logo" />
+        </div>
+
+        <div class="main-btn-wrapper">
+          <div class="menu-wrapper">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="phone">
+            <span
+              ><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+94 717269006</span
+            >
+          </div>
+          <a href="./login.html" class="btn btn-sign-in">Sign In</a>
+          <a href="./register.html" class="btn btn-sign-up">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+<div class="mobile-nav">
+  <div class="logo">
+    <img src="./img/logo-white.svg" alt="">
+  </div>
+  <div class="nav-btn">
+    <i class="fa-solid fa-bars" id="menu-toggle"></i>
+  </div>
+  <div class="sidebar" id="sidebar">
+<div class="close-btn" id="close-btn">
+&times;
+</div>
+<ul>
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+  <li>Services</li>
+</ul>
+  </div>
+</div>
+
+
+
+    <section class="home-page-slider">
+      <div class="container">
+        <div class="content">
+          <h2 class="sub-title">Welcome to Our Gym</h2>
+          <h1 class="main-title">
+            The Best <br />
+            Fitness Studio <br />
+            In Town
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="./img/icon1.svg" alt="" />
+              <h2 class="sub-title">Healthfull Life</h2>
+              <h2 class="main-title">Achive Your Goals</h2>
+              <p>
+                Lorem ipsum is a dummy or placeholder text commonly used in
+                graphic design, publishing, and web development. Its purpose is
+                to permit a page layout
+              </p>
+              <a href="#" class="btn">View Class Schedule</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/icon2.svg" alt="" />
+              <h2 class="sub-title">Healthfull Life</h2>
+              <h2 class="main-title">Best Institute Certificate</h2>
+              <p>
+                Lorem ipsum is a dummy or placeholder text commonly used in
+                graphic design, publishing, and web development. Its purpose is
+                to permit a page layout
+              </p>
+              <a href="#" class="btn">View Class Schedule</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/icon3.svg" alt="" />
+              <h2 class="sub-title">Healthfull Life</h2>
+              <h2 class="main-title">Train Day and Night</h2>
+              <p>
+                Lorem ipsum is a dummy or placeholder text commonly used in
+                graphic design, publishing, and web development. Its purpose is
+                to permit a page layout
+              </p>
+              <a href="#" class="btn">View Class Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="count">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-top">
+                <div class="icon">
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="number">550</div>
+              </div>
+              <small>Skilled Experts</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-top">
+                <div class="icon">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="number">50</div>
+              </div>
+              <small>Skilled Experts</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-top">
+                <div class="icon">
+                  <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="number">70</div>
+              </div>
+              <small>Skilled Experts</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-top">
+                <div class="icon">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="number">60</div>
+              </div>
+              <small>Feedbacks</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <h2 class="title">Meet Our Skilled Team</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="./img/team-4.png" alt="" />
+              <h2>Tom Clan</h2>
+              <h3>CEO & Owner</h3>
+              <div class="social-wrapper">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp-square"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/team-2.png" alt="" />
+              <h2>Brooz Cris</h2>
+              <h3>Trainer</h3>
+              <div class="social-wrapper">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp-square"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/tean-1.png" alt="" />
+              <h2>Julia Ann</h2>
+              <h3>Trainer</h3>
+              <div class="social-wrapper">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp-square"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <h2>
+          <span class="sub-title">PRICING PLAN</span>
+          <span class="main-title">Our Pricing Plan</span>
+        </h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="./img/picing-icon_1-1.svg" alt="" />
+              <h3>Basic Membership</h3>
+              <h4>
+                <span class="price">2500 LKR</span>
+                <span class="duration">/Month</span>
+              </h4>
+              <p>
+                History, Purpose and Usage. Lorem ipsum, or lipsum as it is
+                sometimes known, is dummy text used in laying out print, graphic
+                or web
+              </p>
+              <ul>
+                <li>12 trainings</li>
+                <li>Free Shower & Lockers</li>
+                <li>Personal Yoga Tips</li>
+                <li>Free Parking</li>
+              </ul>
+              <a href="#" class="btn"> Choose This Plan</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/picing-icon_1-2.svg" alt="" />
+              <h3>Standard Membership</h3>
+              <h4>
+                <span class="price">4500 LKR</span>
+                <span class="duration">/Month</span>
+              </h4>
+              <p>
+                History, Purpose and Usage. Lorem ipsum, or lipsum as it is
+                sometimes known, is dummy text used in laying out print, graphic
+                or web
+              </p>
+              <ul>
+                <li>12 trainings</li>
+                <li>Free Shower & Lockers</li>
+                <li>Personal Yoga Tips</li>
+                <li>Free Parking</li>
+              </ul>
+              <a href="#" class="btn"> Choose This Plan</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/picing-icon_1-3.svg" alt="" />
+              <h3>Ultimate Membership</h3>
+              <h4>
+                <span class="price">7500 LKR</span>
+                <span class="duration">/Month</span>
+              </h4>
+              <p>
+                History, Purpose and Usage. Lorem ipsum, or lipsum as it is
+                sometimes known, is dummy text used in laying out print, graphic
+                or web
+              </p>
+              <ul>
+                <li>12 trainings</li>
+                <li>Free Shower & Lockers</li>
+                <li>Personal Yoga Tips</li>
+                <li>Free Parking</li>
+              </ul>
+              <a href="#" class="btn"> Choose This Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest-news">
+      <div class="container">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="card">
+              <img src="./img/blog_1_1.png" alt="" />
+              <div class="card-body">
+                <div class="meta-data">
+                  <small>By Admin</small>
+                  <small>2025 April 02</small>
+                </div>
+                <p>
+                  History, Purpose and Usage. Lorem ipsum, or lipsum as it is
+                  sometimes known, is dummy text used in laying out print,
+                  graphic or w
+                </p>
+                <a href="#" class="btn">Book an Appointment</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="./img/blog_1_2.png" alt="" />
+              <div class="card-body">
+                <div class="meta-data">
+                  <small>By Admin</small>
+                  <small>2025 April 02</small>
+                </div>
+                <p>
+                  History, Purpose and Usage. Lorem ipsum, or lipsum as it is
+                  sometimes known, is dummy text used in laying out print,
+                  graphic or w
+                </p>
+                <a href="#" class="btn">Book an Appointment</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img src="./img/blog_1_3.png" alt="" />
+              <div class="card-body">
+                <div class="meta-data">
+                  <small>By Admin</small>
+                  <small>2025 April 02</small>
+                </div>
+                <p>
+                  History, Purpose and Usage. Lorem ipsum, or lipsum as it is
+                  sometimes known, is dummy text used in laying out print,
+                  graphic or w
+                </p>
+                <a href="#" class="btn">Book an Appointment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+
+<footer>
+  <section class="footer">
+<div class="container">
+  <div class="logo">
+    <img src="./img/logo-white.svg" alt="">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+  </nav>
+  <div class="copyright">
+    <span>Developed by Chethani Pabasara 2025</span>
+  </div>
+</div>
+
+  </section>
+</footer>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 2,
+            nav: true,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<footer>
+  <section class="footer">
+<div class="container">
+  <div class="logo">
+    <img src="./img/logo-white.svg" alt="">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+  </nav>
+  <div class="copyright">
+    <span>Developed by Chethani Pabasara 2025</span>
+  </div>
+</div>
+
+  </section>
+</footer>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 2,
+            nav: true,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
